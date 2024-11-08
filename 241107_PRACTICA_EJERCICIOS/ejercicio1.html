@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi práctica de html semántico</title>
+</head>
+<body>
+    <!-- Header es la sección superior de la pagina y generalmente incluye 
+     información introductoria como el título y el menú de navegación
+     normalmente contine el h1 y es el título principal-->
+     <header>
+        <h1> Bienvenidos a mi sitio web</h1>
+        <!-- Menú de navegación: dentro va a haber un menu de opciones para que pueda navegar
+         pero es más facil darle formato o diseño cuando se agrupan en una lista no ordenada
+         y cada uno de los elementos con li-->
+            <nav>
+                <ul>
+                    <li>Sobre mí</li>
+                    <li>Intereses</li>
+                    <li>Enlaces</li>
+                </ul>
+            </nav>
+     </header>
+     <!-- main es la seccion principal que contiene el contenido central de la página se recomienda
+      usar main solo una vez en cada página para indicar la parte más importante del documento. -->
+      <main>
+        <section>
+            <h2>Sobre mí</h2>
+            <p> Me llamo María de Jesús estoy aprendiendo desarrollo web y etiquetas semánticas de html.</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Odio sequi quos voluptatum ex, veritatis vel, rerum dolores, 
+                dolor cum fuga ab eveniet harum repudiandae deserunt facilis fugiat numquam eius sit!
+            </p>
+        </section>
+        <section>
+            <h2>Intereses</h2>
+            <ul>
+                <li>Diseño 3D</li>
+                <li>Mapas</li>
+                <li>Video Juegos</li>
+                <li>Volleyball</li>
+            </ul>
+            <!-- figure agrupa contenido visual como imagenes y es comun utilizarla en conjunto
+             con la etiqueta figcaption que proporciona un título o descripción para el contenido visual -->
+             <figure>
+                <img src="./img/3D.webp" alt="Diseño 3D" width="50%" title="Diseño 3D">
+                <figcaption>Imagen representativa de programa de diseño.</figcaption>
+             </figure>
+             <figure>
+                <img src="./img/mapa.jpg" alt="Diseño 3D" width="50%" title="Mapa antiguo">
+                <figcaption>Imagen de un mapa antiguo.</figcaption>
+             </figure>
+             <figure>
+                <img src="./img/videojuego.jpg" alt="Diseño 3D" width="50%" title="Call of Duty">
+                <figcaption>Imagen el videojuego Call of Duty</figcaption>
+             </figure>
+             <figure>
+                <img src="./img/volley.jpg" alt="Diseño 3D" width="50%" title="Volleyball">
+                <figcaption>Imagen un juego de Volleyball</figcaption>
+             </figure>
+        </section>
+        <section>
+            <h2>Enlaces</h2>
+            <p>Visita estos sitios recomendados para aprender desarrollo web:</p>
+            <ul>
+                <!-- a es una etiqueta de enlaces que generalmente viene acompañada el atributo href donde 
+                 direccion a la cual queremos redireccionar
+                 otro atributo comunmente utilizado es target que da un control de como se va a abrir el enlace -->
+                <li>
+                    <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">w3schools</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>
+                </li>
+            </ul>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+      </footer>
+</body>
+</html>
