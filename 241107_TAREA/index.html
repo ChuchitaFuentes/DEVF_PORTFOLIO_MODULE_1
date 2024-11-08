@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semántica HTML</title>
+</head>
+<body>
+    <header>
+        <img src="./images/circle-question-regular.svg" alt="Logo de la empresa" title="Logo"width="20%">
+        <h1>Empresa</h1>
+        <h2>Descripción corta de la empresa</h2>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#first_section">First Section</a></li>
+                <li><a href="#second_section">Second Section</a></li>
+                <li><a href="#get_started">Get started</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facere molestias nam quas iusto, a optio est tenetur itaque blanditiis sequi rerum. Aut reprehenderit fuga labore voluptate cum, nisi rerum?</p>
+            <img src="./images/circle-question-regular.svg" alt="Introduction" width="20%">
+            <button type="button" onclick="alert('¡Botón 1 presionado!')">Haz clic aquí</button>
+        </section>
+
+        <section id="first_section">
+            <h2>First Section</h2>
+            <ul>
+                <li>
+                <figure>
+                    <img src="./images/atom-solid.svg" alt="Image description" width="15%" title="Image description">
+                    <figcaption>Image description</figcaption>
+                 </figure>
+                 <p>Texto descriptivo mas grande de la imagen</p>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./images/circle-question-regular.svg" alt="Image description" width="15%" title="Image description">
+                        <figcaption>Image description</figcaption>
+                     </figure>
+                     <p>Texto descriptivo mas grande de la imagen</p>
+                    </li>
+                <li>
+                <figure>
+                    <img src="./images/bicycle-solid.svg" alt="Image description" width="15%" title="Image description">
+                    <figcaption>Image description</figcaption>
+                 </figure>
+                 <p>Texto descriptivo mas grande de la imagen</p>
+                </li>
+            </ul> 
+            <button type="button" onclick="alert('¡Botón 2 presionado!')">Haz clic aquí</button>
+        </section>
+
+        <section id="second_section">
+            <h2>Second section</h2>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugit porro unde accusamus tempora? Dignissimos recusandae eos doloremque dolor quidem quam ipsa, dolores unde eum. Impedit, possimus. Dolor, ipsa quasi?</h3>
+            <figure>
+                <img src="images/graph.avif" alt="Image description" width="50%" title="Image description" height="200px"width=70%>
+                <figcaption>Image description</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum similique mollitia aliquid dolorum earum eum vel ab laudantium accusantium nobis, eius perferendis. Delectus voluptas possimus necessitatibus perspiciatis consequuntur vitae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio inventore tempore at qui. Officia blanditiis vitae voluptas, at illum iste in. Mollitia quae nam dolorem repellat dolor iste voluptatum modi.</p>
+            <button type="button" onclick="alert('¡Botón 3 presionado!')">Haz clic aquí</button>
+        </section>
+
+        <section id="get_started">
+            <h2>Get Started</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic minus libero earum aspernatur omnis vitae tempore, eveniet, alias nihil rerum provident ex quia? Illo quae aut natus neque assumenda.</h3>
+            <button type="button" onclick="alert('¡Botón 4 presionado!')">Haz clic aquí</button>
+            <button type="button" onclick="alert('¡Botón 5 presionado!')">Haz clic aquí</button>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>About us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, unde libero fugit minima accusamus vitae. Nostrum debitis odit, veritatis, sint et libero nobis tempora adipisci sequi, assumenda labore. Necessitatibus, laboriosam!</p>
+            <button type="button" onclick="alert('¡Botón 5 presionado!')">Haz clic aquí</button>
+        </section>
+        <section>
+            <h3>Contact</h3>
+            <dl>
+                <dt>Address</dt>
+                    <dd>1234 Mi casita en la pradera</dd>
+                <dt>Phone</dt>
+                    <dd>(000) 000-0000 x 0000</dd>
+                <dt>Email</dt>
+                    <dd>chuchita@jijiji.jiji</dd>
+            </dl>
+        </section>
+        <section class="contact">
+            <!--target nos indica si el enlace se abre en una nueva ventana del navegador-->
+            <h2>Contact</h2>
+            <a href="https://linkedin.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img src="images/circle-question-regular.svg" alt="LinkedIn" width="5%"></a>
+            <a href="https://github.com" target="_blank"style="margin-right:2%; margin-left: 2%" > <img src="./images/bicycle-solid.svg" alt="GitHub" width="5%"></a>
+            <a href="https://twitter.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img src="images/atom-solid.svg" alt="Twitter" width="5%"></a>
+        </section>
+    </footer>
+</body>
+</html>
