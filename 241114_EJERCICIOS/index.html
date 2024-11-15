@@ -4,11 +4,114 @@
     <!-- Práctica de metadatos y accesibilidad -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metadatos y accesibilidad</title>
+    <!-- Metadatos para SEO  Optimización para búsqueda de navegadores 
+     description: el navegador las búsquedas muestran una descripción y un título
+     busqueda con un -->
+     <meta name="description" content="Perfil profesional de María de Jesús, estudiante HTML">
+     <meta name="keywords" content="html, herramientas de depurado de metadatos, proyecto web">
+     <meta name="author" content="María de Jesús Fuentes">
+
+     <!-- Open grap nos sirve para optimización en redes sociales como Facebook, Instragram y whatsapp -
+      og:type puede ser web page
+      og:image se puede subir una imagen a un reposotorio
+      og:url se usa para poner la url de esta página
+      -->
+      
+      <meta
+      property="og:title"
+      content="Portafolio de María de Jesús"
+      >
+      <meta 
+      property="og:description"
+      content="Perfil profesional de María de Jesús, estudiante HTML"
+      >
+      <meta
+      property="og:image"
+      content="https://lh3.googleusercontent.com/a/ACg8ocJe_AzSYMvaL6l8gt4G5Eew5uTp0ovIomy6LdwNLetZEfw5lNWC=s432-c-no"
+      >
+      <meta
+      propertuy="og:url"
+      content="https://chuchitafuentes.github.io/SUBIR_GITHUB_PAGES/"
+      >
+
+      <meta
+      property="og:type"
+      content="profile"
+      >
+
+    <title>Portafolio María de Jesús Fuentes</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    
+    <main>
+        <!-- Resumen profesional -->
+         <!-- aria-labelledby apunta a un id de otro elemento cercano que ya contiene una
+          descripción -->
+          <section aria-labelledby="resumen-profesional-titulo">
+            <h2 id="resumen-profesional-titulo">Resumen profesional</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officiis quis quia commodi sunt error possimus animi. Sequi, dolor. Hic sint numquam quod amet. Non cumque ratione repudiandae itaque culpa!</p>
+        </section>
+        <!-- Habilidades y herramientas -->
+        <section aria-labelledby="habilidades-titulo">
+            <h2 id="habilidades-titulo">Habilidades y herramientas</h2>
+            <ul>
+                <li>HTM5</li>
+                <li>Control de versiones de Git y GitHub</li>
+                <li>Accessibilidad y SEO</li>
+            </ul>
+        
+            <!--  Proyectos realizados -->
+            <section aria-labelledby="proyectos-titulo">
+                <h2 id="proyectos-titulo">Proyectos</h2>
+                <ul>
+                    <!-- Proyecto 1 -->
+                    <article aria-label="Primer proyecto que es un html semántico">
+                        <header>
+                            <h3>Mi primer HTML semántico</h3>
+                            <p>
+                                <time datetime="2024-10">Octubre 2024</time>
+                                <span>Tecnologías:HTML, Git, GitHub</span>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur recusandae reiciendis obcaecati, ab aliquid reprehenderit amet atque explicabo omnis nam accusamus dolor exercitationem dolorum rem hic nulla quae soluta fugit.</p>
+                        </header>
+                        <figure>
+                            <img src="https://picsum.photos/seed/picsum/400/200" alt="Captura de pantalla de mi página de html semántico">
+                            <figcaption>Pantalla principal de mi HTML semántico</figcaption>
+                        </figure>
+                        <a href="https://github.com/ChuchitaFuentes/SUBIR_GITHUB_PAGES.git">Ver en GitHub</a>
+                    </article>
+                     <!-- Proyecto 2-->
+                     <article aria-label="Segundo proyecto que es de una receta de cocina">
+                        <header>
+                            <h3>Mi receta de cocina</h3>
+                            <p>
+                                <time datetime="2024-11">Septiembre 2024</time>
+                                <span>Tecnologías:HTML, Git, GitHub</span>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur recusandae reiciendis obcaecati, ab aliquid reprehenderit amet atque explicabo omnis nam accusamus dolor exercitationem dolorum rem hic nulla quae soluta fugit.</p>
+                        </header>
+                        <figure>
+                            <img src="https://picsum.photos/500/300/?blur" alt="Captura de pantalla de mi página de mi receta de cocina">
+                            <figcaption>Pantalla principal de mi receta de cocina</figcaption>
+                        </figure>
+                        <a href="https://github.com/ChuchitaFuentes/SUBIR_GITHUB_PAGES.git">Ver en GitHub</a>
+                    </article>
+        </section>
+
+        <!-- aside Puede usarse para notas del autor  o en este caso para información de contacto 
+         tambien se pueden usar como pop up -->
+        <aside aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo">Contacto</h2>
+            <p>Si deseas discutir de un proyecto o colaboración contáctame a:</p>
+            <address>
+                <p>Email: <a href="mailto:corre@correo.com">correo@correo.com</a></p>
+            </address>
+            <p>555 555 5555</p>
+
+        </aside>
+       
+
+    </main>
+   
 </body>
 </html>
